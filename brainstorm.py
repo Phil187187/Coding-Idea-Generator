@@ -2,7 +2,7 @@ import openai
 #import argparse
 import webbrowser
 
-data_dir = "Your Path to the data directory"
+data_dir = "<<Your Path to the data directory>>"
 
 #p = argparse.ArgumentParser(description='Brainstorm idea')
 
