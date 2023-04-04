@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chatbot Project</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <h1 class="display-4 text-center my-5">AI Chatbot Project</h1>
+    <p class="lead text-center">A chatbot that uses artificial intelligence to converse with users.</p>
+  </header>
+  <main class="container">
+    <section>
+      <h2 class="my-4">Overview</h2>
+      <p>The AI chatbot project is a conversational agent that uses machine learning to understand and respond to user queries. The chatbot will be able to answer questions, provide recommendations, and even make small talk with users.</p>
+    </section>
+    <section>
+      <h2 class="my-4">Goals</h2>
+      <ul class="list-unstyled">
+        <li>To build an AI chatbot that can understand and respond to user queries</li>
+        <li>To integrate the chatbot with popular messaging platforms like Facebook Messenger and WhatsApp</li>
+        <li>To train the chatbot using machine learning algorithms to improve its accuracy over time</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="my-4">Project Requirements</h2>
+      <ul class="list-unstyled">
+        <li>Maschine Learning Skills</li>
+        <li>Front and Backend Development</li>
+        <li>Understanding of Programming ALguages such as Python, JS</li>
+        <li>Knowledge</li>
+      </ul>
+    </section>
+    <section>
+      <h2 class="my-4">Project Plan</h2>
+      <ol>
+        <li>Research existing chatbot frameworks and libraries</li>
+        <li>Design the chatbot's user interface and conversational flow</li>
+        <li>Develop and test the chatbot's natural language processing (NLP) algorithms</li>
+        <li>Integrate the chatbot with messaging platforms like Facebook Messenger and WhatsApp</li>
+        <li>Train the chatbot using machine learning algorithms to improve its accuracy over time</li>
+      </ol>
+    </section>
+    <section>
+      <h2 class="my-4">Time Calculation and scheudle</h2>
+      <p>This project will propaly take about 600 hours of work for a single person to create.</p>
+      <p>That would be roughly 80 workdays.</p>
+      <p>Or just about about 2.5 Months.</p>
+      <p>Here is a recommended scheudle:</p>
+      <ul class="list-unstyled">
+        <li>Week 1-2: Research and Planning</li>
+        <li>    Research existing chatbot frameworks and libraries     Identify the best platforms to integrate the chatbot (e.g. Facebook Messenger, WhatsApp)     Develop a project plan and timeline</li>
+        <li>Week 3-4: Design and User Interface</li>
+        <li>    Design the chatbot's user interface and conversational flow     Create wireframes and prototypes to visualize the user interface     Develop a plan for how the chatbot will respond to different user inputs</li>
+        <li>Week 5-6: NLP Development</li>
+        <li>    Develop and test the chatbot's natural language processing (NLP) algorithms     Use tools like NLTK and spaCy to extract meaning from user inputs     Integrate the NLP algorithms with the chatbot's conversational flow</li>
+        <li>Week 7-8: Frontend and Backend Development</li>
+        <li>    Develop the frontend and backend of the chatbot     Use programming languages such as Python and JavaScript     Develop a chatbot API to connect with messaging platforms</li>
+        <li>Week 9-10: Integration and Testing</li>
+        <li>    Integrate the chatbot with messaging platforms like Facebook Messenger and WhatsApp     Test the chatbot's functionality and NLP accuracy     Refine the chatbot's conversational flow and NLP algorithms based on testing feedback</li>
+        <li>Week 11-12: Machine Learning Training</li>
+        <li>    Train the chatbot using machine learning algorithms to improve its accuracy over time     Collect and label data for the chatbot to learn from     Use tools like scikit-learn and TensorFlow to develop the chatbot's machine learning models</li>
+        <li>Week 13-14: Final Testing and Deployment</li>
+        <li>    Test the chatbot thoroughly to ensure its functionality and accuracy     Deploy the chatbot to production environments     Refine the chatbot's features and functionality based on user feedback</li>
+      </ul>
+    </section>
+      </main>
+    </body>
+    </html>

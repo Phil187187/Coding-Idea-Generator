@@ -1,0 +1,28 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+  }
+  
+  header {
+    margin-bottom: 3rem;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  h1, h2 {
+    font-weight: 700;
+  }
+  
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  ul, ol {
+    padding-left: 1.5rem;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }
+  

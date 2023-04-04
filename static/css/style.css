@@ -1,0 +1,212 @@
+/* Global styles */
+#loading {
+    display: none;
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  a {
+    color: #337ab7;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+  }
+  
+  header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    padding: 10px;
+  }
+  
+  header img {
+    max-height: 50px;
+    margin: 10px;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #f1f1f1;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #34495e;
+  }
+  
+  /* Results */
+  #brainstorm-output-section {
+    background-color: #f1f1f1;
+    padding: 30px;
+    margin-top: 30px;
+  }
+  
+  #brainstorm-output-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  
+  #brainstorm-output {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #ddd;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+  }
+  
+/* Form */
+form {
+    position: relative;
+  }
+  
+  #loading-bar {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background-color: #2ecc71;
+    z-index: 999;
+    display: none;
+  }
+  
+  /* Results */
+  #brainstorm-output-section {
+    position: relative;
+  }
+  
+  #loading-spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    display: none;
+  }
+  
+  #loading-spinner .spinner {
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #2ecc71;
+    animation: spinner 0.6s linear infinite;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+  }
+  
+  @keyframes spinner {
+    to {transform: rotate(360deg);}
+  }
+
+  /* Center everything */
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  header, form, #brainstorm-output-section, footer {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Center form input */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  input[type="text"] {
+    /* ...existing input styles... */
+    margin: 0 auto;
+  }
+/* Form */
+form {
+    position: relative;
+  }
+  
+  input[type="submit"] {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #2c3e50;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px; /* Add margin to submit button */
+  }
+    

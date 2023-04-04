@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My Awesome Brainstorming App</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="https://i.ibb.co/nggbfw6/Fledlick-a-logo-app-uses-ai-to-brainstorm-project-ideas-67828ce0-7d99-4d5c-9d62-8f3abd10225a-removeb.png" alt="Brainstorm App Logo">
+      <h1>My Awesome Brainstorming App</h1>
+    </header>
+    <form id="brainstorm-form">
+      <label for="idea">What's your idea?</label>
+      <input type="text" id="idea" name="idea">
+      <div id="loading-bar"></div>
+      <input type="submit" value="Submit">
+      <div id="loading-spinner">
+        <div class="spinner"></div>
+      </div>
+    </form>    
+    <section id="brainstorm-output-section">
+      <h2>Brainstorming Results</h2>
+      <div id="brainstorm-output"></div>
+    </section>
+    <script>
+document.getElementById("brainstorm-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+  var idea = document.getElementById("idea").value;
+  var submitButton = document.querySelector('input[type="submit"]');
+  submitButton.disabled = true;
+  var loadingBar = document.getElementById("loading-bar");
+  var loadingSpinner = document.getElementById("loading-spinner");
+  loadingBar.style.display = "block";
+  loadingSpinner.style.display = "block";
+  document.getElementById("brainstorm-output").innerHTML = ''; // Clear brainstorm output
+  fetch('/brainstorm', {
+    method: 'POST',
+    body: new URLSearchParams({
+      'idea': idea
+    })
+  })
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("brainstorm-output").innerHTML = data;
+    loadingBar.style.display = "none";
+    loadingSpinner.style.display = "none";
+    submitButton.disabled = false;
+  })
+  .catch(err => {
+    console.error(err);
+    loadingBar.style.display = "none";
+    loadingSpinner.style.display = "none";
+    submitButton.disabled = false;
+  });
+});
+
+
+    </script>
+  </body>
