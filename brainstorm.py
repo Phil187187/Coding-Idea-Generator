@@ -2,7 +2,7 @@ import openai
 #import argparse
 import webbrowser
 
-data_dir = "C:/Users/Philipp/Desktop/Project Idea generator/data/"
+data_dir = "Your Path to the data directory"
 
 #p = argparse.ArgumentParser(description='Brainstorm idea')
 
@@ -35,6 +35,7 @@ assistant_reply_best = open_file('assistant_reply_best.txt')
 def brainstorm_html_idea_and_write(idea):
     output = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
+        #model="gpt-4",
         messages=[
             {"role": "system", "content": sys_prompt},
             {"role": "user", "content": "brainstorm --idea ai --output HTML"},
