@@ -1,50 +1,75 @@
-My Awesome Brainstorming App
+# My Awesome Project
 
 This web application is designed to help you brainstorm project ideas using the power of OpenAI's GPT-3.5-turbo. The application is built using Flask, a lightweight Python web framework, and leverages OpenAI's API to generate creative and innovative ideas for your projects.
-Table of Contents
 
-    Features
-    Installation
-    Running the App
-    License
-    Contributing
-    Acknowledgements
+## Table of Contents
 
-Features
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Acknowledgements](#acknowledgements)
 
-    User-friendly interface
-    Communicates with OpenAI's GPT-3.5-turbo API
-    Generates HTML output based on user input
-    Provides project overview, goals, requirements, and plan
-    Calculates time and provides a recommended schedule for project completion
+## Getting Started
 
-Installation
-Prerequisites
+These instructions will help you set up and run the project on your local machine for development and testing purposes.
 
-    Python 3.6 or higher
-    OpenAI API key
+### Prerequisites
 
-Steps
+Python 3.6 or higher
 
-    Clone this repository to your local machine.
-    Install the required packages using pip install -r requirements.txt.
-    Create an OpenAI account and obtain your API key.
-    Replace the placeholder text in data/api_key.txt with your OpenAI API key.
+OpenAI API key
 
-Running the App
+### Installation
 
-    In your terminal, navigate to the project directory.
-    Run the Flask app using the command python app.py.
-    Open your web browser and go to http://127.0.0.1:5000/.
-    Enter your project idea and click the "Submit" button to generate a brainstormed project plan in HTML format.
+1. Clone the repo:
+```
+git clone https://github.com/Phil187187/Coding-Idea-Generator.git
+```
+2. Change to the project directory:
+```
+cd Coding-Idea-Generator
+```
+3. Install the required packages:
+```
+pip install -r requirements.txt
+```
+4. Set up your OpenAI API key:
+```
+nano /data/api_key.txt
+```
 
-License
+5. Set up your path:
+```
+nano brainstorm.py // Replace the path to data directory in line 5 with the placeholder
+```
 
-This project is licensed under the MIT License. See the LICENSE file for details.
-Contributing
+## Usage
 
-Contributions are welcome! Feel free to submit a pull request or open an issue for discussion. Please make sure to follow the existing code style and add/update documentation as necessary.
-Acknowledgements
+Follow these steps to use the My Awesome Project:
 
-    Flask: A lightweight web framework for Python
-    OpenAI: The provider of the GPT-3.5-turbo API and an essential resource for the project's AI capabilities
+1. Run the Flask App:
+
+ 
+```
+python main.py
+```
+
+2. Open Browser:
+ 
+ 
+The Server is now running on
+```
+http://localhost:5000
+```
+4. Generate Ideas:
+
+ 
+Enter your project idea and click the "Submit" button to generate a brainstormed project plan
+
+
+## Acknowledgements
+
+- Flask: A lightweight web framework for Python
+- OpenAI: The provider of the GPT-3.5-turbo API and an essential resource for the project's AI capabilities
+
